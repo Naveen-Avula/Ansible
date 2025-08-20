@@ -13,6 +13,6 @@
   
   - name: printing info inheritance
     ansible.builtin.debug:
-      ms: "Hi , i am learnig {{course}}"
+      msg: "Hi , i am learnig {{course}}"
 
 
