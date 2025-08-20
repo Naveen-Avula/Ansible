@@ -1,10 +1,9 @@
 - name: variables
-  hosts: localhost
   vars:  #variable declaration --this is PLAY level declaration
     course: "devops"
     trainer: "siva"
     duration: "50 hrs"
-
+  hosts: localhost
   tasks:
   - name: printing information
     ansible.builtin.debug:
