@@ -1,0 +1,8 @@
+- name: variables from args
+  hosts: localhosts
+  tasks:
+  - name: get from args
+    ansible.builtin.debug:
+      msg: "Hi {{PERSON}}, Good {{wishes}}."
+
+      # while executing we need to -e "PERSON=NAME" -e "wishes=mrng"

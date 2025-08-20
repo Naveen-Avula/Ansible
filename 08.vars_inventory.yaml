@@ -1,0 +1,9 @@
+- name: variables from inventory
+  hosts: localhost
+  tasks:
+  - name: printing info
+    ansible.builtin.debug:
+      msg: "Hi i am learning {{course}} from {{trainer}} duration is {{duration}}."
+
+      
+# it will automatically check inventoy file , if we not specified anything.
