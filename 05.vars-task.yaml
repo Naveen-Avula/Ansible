@@ -5,9 +5,14 @@
     trainer: "siva"
     duration: "120 hrs"
   tasks: 
-  - name: printing information
+  - name: printing information override
     vars: # task level  
       couser: "Terraform-t-level"
     ansible.builtin.debug:
       msg: "Hi , i am learning {{course}} from {{trainer}}..duration is {{duration}}."
+  
+  - name: printing info inheritance
+    ansible.builtin.debug:
+      ms: "Hi , i am learnig {{course}}"
+
 
