@@ -7,10 +7,10 @@
   tasks: 
   - name: printing information override
     vars: # task level  
-      couser: "Terraform-t-level"
+      course: "Terraform-t-level"
     ansible.builtin.debug:
       msg: "Hi , i am learning {{course}} from {{trainer}}..duration is {{duration}}."
-       
+
   - name: printing info inheritance
     ansible.builtin.debug:
       msg: "Hi , i am learnig {{course}}"
