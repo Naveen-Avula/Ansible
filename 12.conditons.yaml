@@ -1,1 +1,14 @@
-- name: 
+- name: conditions
+  hosts: web
+  become: yes
+  tasks:
+    - name: checking user exist or not
+      ansible.builtin.command: id expense
+      register: USER
+      ignore_errors: true
+
+
+    - name: say hi
+      ansible.bulitin.debug:
+        msg: "hi, how r u"
+    
