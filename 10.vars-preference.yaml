@@ -10,8 +10,8 @@
     private: false
   tasks:
   - name: check pref
-    vars:
-      WISHES: "mrng from task level."
+    # vars:
+    #   WISHES: "mrng from task level."
     ansible.builtin.debug:
       msg: "hello, Good {{WISHES}}"
 
@@ -21,4 +21,6 @@
 
 
 
-# 1. arguments
+# 1. arguments leve
+#2. task level args
+#3.
