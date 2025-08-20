@@ -1,13 +1,14 @@
 - name: datatypes
-  hosts: localhosts
+  hosts: localhost
   vars:
     course: Devops # string
     tools: #list
     - linux
     - shell
     - anisble
-    experience: #Map
-      devops: 3
+    - something
+    experience: #Map or dictionary
+      devops: 3 
       AWS: 2
       Docker: 1
     Realtime-project: true # boolean.  
