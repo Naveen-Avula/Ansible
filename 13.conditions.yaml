@@ -8,10 +8,10 @@
   - name: number is less than  10
     ansible.builtin.debug:
       msg: "given num is less tha n10"
-    when: number < 10
+    when: number | int < 10
 
   - name: number is grt ess than  10
     ansible.builtin.debug:
       msg: "given num is less tha n10"
-    when: number > 10
+    when: number | int  >= 10
   
