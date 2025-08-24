@@ -32,3 +32,13 @@
   - name: unique numbers
     ansible.builtin.debug:
       msg: "{{ numbers | unique}}"
+
+- name: min and mx
+  hosts: localhost
+  vars:
+    ages: [25,35,15,68,6]
+  tasks:
+  - name: print min and max
+    ansible.builtin.debug:
+      msgs: "min age: {{ages | min}}, max age: {{ ages | max}}"
+     
