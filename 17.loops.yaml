@@ -5,10 +5,10 @@
     ansible.builtin.dnf:
       name: "{{item.name}}"
       stae: "{{item.state}}"
-  loop:
-  - { name: 'mysql', state: 'latest'} # this is consider as item.
-  - {name: 'nginx', state: 'absent'}
-  
+    loop:
+    - { name: 'mysql', state: 'latest'} # this is consider as item.
+    - {name: 'nginx', state: 'absent'}
+    
 
 # latest means installing
 # absent means uninstalling
