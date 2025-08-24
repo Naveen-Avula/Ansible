@@ -4,3 +4,12 @@
   - name: print default value
     ansible.builtin.debug:
       msg: "hi my name is : {{MYNAME | default('NAVE-EN')}}"
+
+- name: Uppercase
+  hosts: localhost
+  vars:
+    greetings: "hello, gm"
+  tasks:
+  - name: converting to uppercase
+    ansible.builtin.debug:
+      msg: "{{greeting | upper}}"
