@@ -1,0 +1,10 @@
+- name: installing packages
+  hosts: web
+  tasks:
+  - name: installing pckgs in a loop
+    ansible.builtin.dnf:
+      name: "{{ item }}"
+      state: latest
+    loop:
+      - mysql
+      - nginx
