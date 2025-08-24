@@ -17,8 +17,10 @@
 
 - name: lowercase
   hosts: localhost
+  vars:
+    greet: "HELLO"
   tasks:
-  - name: cobvert to lower
+  - name: convert to lower
     ansible.builtin.debug:
-      msg: "{{greetings | lower}}"
+      msg: "{{greet | lower}}"
   
