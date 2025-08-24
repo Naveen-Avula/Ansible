@@ -1,5 +1,6 @@
 - name: install and remove packages
   hosts: web
+  become: yes
   tasks:
   - name: packages in loops
     ansible.builtin.dnf:
