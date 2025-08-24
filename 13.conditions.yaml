@@ -12,6 +12,6 @@
 
   - name: number is grt ess than  10
     ansible.builtin.debug:
-      msg: "given num is less tha n10"
+      msg: "given num is grt tha n10"
     when: number | int  >= 10
   
