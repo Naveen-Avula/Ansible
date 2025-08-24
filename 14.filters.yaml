@@ -55,7 +55,7 @@
       msg: "before convert: {{my_dict}}"
   - name: after convert
     ansible.builtin.debug:
-      msg: "after convert: {{ my_dict | dict2item}}"
+      msg: "after convert: {{ my_dict | dict2item}s}"
 
 - name: convert items to dictionary
   hosts: localhost
