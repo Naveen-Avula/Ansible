@@ -3,7 +3,7 @@
   vars_prompt:
   - name: number
     prompt: enter num
-    private: flase
+    private: no
   tasks: 
   - name: number is less than  10
     ansible.builtin.debug:
